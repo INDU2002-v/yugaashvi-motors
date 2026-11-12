@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+  <meta name="description" content="Yugaashvi Motors — motorcycle spare parts in Matara, Sri Lanka. Find parts for your bike and order conveniently through WhatsApp.">
+  <title>Yugaashvi Motors | Motorcycle Spare Parts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> MATARA, SRI LANKA <i>•</i> YOUR TRUSTED MOTORCYCLE SPARE PARTS PARTNER</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Yugaashvi Motors home">
+      <span class="brand-mark"><span>Y</span><b>M</b><i>◒</i></span>
+      <span class="brand-copy"><strong>YUGAASHVI</strong><b>MOTORS</b><small>RIDE WITH TRUST</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#find-bike">Find Your Parts</a><a href="#categories">Categories</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="header-wa" href="https://wa.me/94702613475?text=Hello%20Yugaashvi%20Motors%2C%20I%20need%20help%20with%20motorcycle%20spare%20parts." target="_blank" rel="noopener"> <span>◉</span> WhatsApp Us</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> MOTORCYCLE SPARE PARTS · MATARA</div>
+        <h1>KEEP YOUR RIDE<br><em>RUNNING</em> STRONG.</h1>
+        <p>Find the right parts for your motorcycle. Choose your bike, explore compatible parts, and order directly through WhatsApp.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#find-bike">FIND YOUR BIKE <b>↗</b></a><a class="btn btn-outline" href="#categories">EXPLORE PARTS</a></div>
+        <div class="hero-proof"><span>✓</span> Friendly support <span>✓</span> Product inquiries <span>✓</span> Fast assistance</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-ring"></div>
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1100&q=85" alt="Sport motorcycle" onerror="this.style.display='none'">
+        <div class="hero-stamp"><b>YM</b><span>RIDE WITH<br>CONFIDENCE</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span class="line"></span><span>BUILT FOR EVERY RIDE</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div><b>01</b><span><strong>RIGHT PARTS</strong><small>Bike-specific selection</small></span></div>
+      <div><b>02</b><span><strong>WHATSAPP ORDERS</strong><small>Easy direct ordering</small></span></div>
+      <div><b>03</b><span><strong>LOCAL SUPPORT</strong><small>Matara, Sri Lanka</small></span></div>
+      <div><b>04</b><span><strong>RIDE WITH TRUST</strong><small>Here to help you</small></span></div>
+    </section>
+
+    <section class="section bike-finder" id="find-bike">
+      <div class="section-heading">
+        <div><div class="eyebrow dark"><span></span> MAKE THE RIGHT MATCH</div><h2>FIND PARTS FOR <em>YOUR BIKE.</em></h2></div>
+        <p>Select your motorcycle details to see matching parts from our demo catalogue. Not sure? Message us and we’ll help.</p>
+      </div>
+      <div class="finder-panel">
+        <div class="finder-top"><span class="finder-icon">⌕</span><div><b>BIKE PART FINDER</b><small>Choose your motorcycle below</small></div><span class="finder-tag">STEP 01 — 03</span></div>
+        <div class="finder-fields">
+          <label>BIKE BRAND<select id="brandSelect"><option value="">Select brand</option></select></label>
+          <label>MODEL<select id="modelSelect" disabled><option value="">Select brand first</option></select></label>
+          <label>PART CATEGORY<select id="categorySelect"><option value="all">All categories</option></select></label>
+          <button class="btn btn-gold find-button" id="findButton">SHOW MATCHING PARTS ↗</button>
+        </div>
+        <div class="finder-note">ⓘ Compatibility shown is sample catalogue data. Please confirm exact model/year with our team before ordering.</div>
+      </div>
+      <div class="result-heading"><div><span class="eyebrow dark"><span></span> SELECTED FOR YOUR RIDE</span><h3 id="resultTitle">POPULAR SPARE PARTS</h3></div><span id="resultCount" class="result-count">12 ITEMS</span></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span></span> EXPLORE OUR RANGE</div><h2>PARTS FOR EVERY <em>JOURNEY.</em></h2></div>
+        <p>Browse the main spare-parts categories. Choose your bike above to narrow down compatible products.</p>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Engine Parts"><span class="cat-icon">⚙</span><b>ENGINE PARTS</b><small>Keep the heart running</small><i>↗</i></button>
+        <button class="category-card" data-category="Brake Parts"><span class="cat-icon">◉</span><b>BRAKE PARTS</b><small>Control every stop</small><i>↗</i></button>
+        <button class="category-card" data-category="Electrical"><span class="cat-icon">ϟ</span><b>ELECTRICAL</b><small>Power and performance</small><i>↗</i></button>
+        <button class="category-card" data-category="Body Parts"><span class="cat-icon">⬡</span><b>BODY PARTS</b><small>Restore your style</small><i>↗</i></button>
+        <button class="category-card" data-category="Filters"><span class="cat-icon">▤</span><b>FILTERS</b><small>Clean air, smooth ride</small><i>↗</i></button>
+        <button class="category-card" data-category="Accessories"><span class="cat-icon">✦</span><b>ACCESSORIES</b><small>Make it your own</small><i>↗</i></button>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image"><img src="assets/yugaashvi-motors-brand-reference.jpg" alt="Yugaashvi Motors shop and contact banner"></div>
+      <div class="about-copy"><div class="eyebrow"><span></span> ABOUT YUGAASHVI MOTORS</div><h2>YOUR BIKE.<br><em>OUR PRIORITY.</em></h2><p>At Yugaashvi Motors, we’re here to help riders find the motorcycle spare parts they need. Whether you know exactly what you’re looking for or need a little guidance, our team is ready to assist.</p><p class="gold-line">RIDE WITH TRUST.</p><a class="btn btn-gold" href="https://wa.me/94702613475?text=Hello%20Yugaashvi%20Motors%2C%20I%20need%20assistance." target="_blank" rel="noopener">TALK TO OUR TEAM ↗</a></div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="contact-copy"><div class="eyebrow dark"><span></span> WE’RE HERE TO HELP YOU</div><h2>LET’S TALK <em>BIKES.</em></h2><p>For spare parts, product inquiries, or technical assistance, get in touch with Yugaashvi Motors.</p>
+        <div class="contact-list">
+          <a href="tel:+94702613475"><span>☎</span><div><small>CALL US</small><b>070 261 3475</b></div></a>
+          <a href="https://wa.me/94702613475" target="_blank" rel="noopener"><span>◉</span><div><small>WHATSAPP</small><b>070 261 3475</b></div></a>
+          <div><span>⌖</span><div><small>VISIT US</small><b>Matara, Sri Lanka</b></div></div>
+          <a href="https://www.facebook.com/search/top?q=Yugaashvi%20Motors" target="_blank" rel="noopener"><span>f</span><div><small>FACEBOOK</small><b>Yugaashvi Motors</b></div></a>
+        </div>
+      </div>
+      <div class="contact-card"><div class="contact-card-top"><span class="brand-mini">YM</span><span>YUGAASHVI MOTORS</span></div><h3>NEED A PART?<br><em>LET’S FIND IT.</em></h3><p>Send us your bike model, year and the part you need. Our team will help you check availability and pricing.</p><a class="btn btn-gold wide" href="https://wa.me/94702613475?text=Hello%20Yugaashvi%20Motors%2C%20I%20need%20help%20finding%20a%20spare%20part.%0ABike%20brand%3A%20%0AModel%3A%20%0AYear%3A%20%0APart%20needed%3A%20" target="_blank" rel="noopener">MESSAGE ON WHATSAPP ↗</a><small class="card-foot">FRIENDLY SUPPORT · PRODUCT INQUIRIES · TECHNICAL ASSISTANCE</small></div>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">YM <b>YUGAASHVI MOTORS</b></a><span>RIDE WITH TRUST.</span><small>© <span id="year"></span> Yugaashvi Motors. All rights reserved.</small></footer>
+  <a class="floating-wa" href="https://wa.me/94702613475?text=Hello%20Yugaashvi%20Motors%2C%20I%20have%20an%20inquiry." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">◉</a>
+  <script src="script.js"></script>
+</body>
+</html>
